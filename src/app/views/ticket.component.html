@@ -1,0 +1,8 @@
+Update {{ ticket.title }} -- {{ ticket.assignedTo }}
+<button class="btn btn-primary" (click)="deleteElementFunc()">Cancel</button>
+<button class="btn btn-primary" (click)="showDetails()">Details</button>
+<div *ngIf="detail != undefined">
+        Id: {{ detail.id }} <br>   
+        Doing : {{ detail.doing }} <br>   
+        Description: {{ detail.description }}
+</div>
